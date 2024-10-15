@@ -11,7 +11,6 @@ def proc():
         input_string = input_f.read().replace("\n", "")
 
     with open(output_file, mode="wb") as output_f:
-        print(bytes.fromhex(input_string))
         output_f.write(bytes.fromhex(input_string))
 
 
